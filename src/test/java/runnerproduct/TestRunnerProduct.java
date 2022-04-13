@@ -7,6 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/product.feature",
+				 monochrome=true ,
 				 glue = {"stepDefinitionProduct"},
 				 tags = "@Regression",
 				 plugin = {"pretty","html:target/CucumberReport/cucumber.html",
